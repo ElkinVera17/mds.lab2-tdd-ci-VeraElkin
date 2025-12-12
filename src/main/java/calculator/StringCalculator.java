@@ -9,9 +9,11 @@ package calculator;
  * @author USUARIO
  */
 public class StringCalculator {
-       public int add("") {
-           
-           return 0;
-           
-       }
-      }
+    public int add(String numbers) {
+        // Iteración 1: cadena vacía devuelve 0
+        if (numbers.isEmpty()) {
+            return 0;
+        }
+        return 0;  // Por ahora solo maneja cadena vacía
+    }
+}

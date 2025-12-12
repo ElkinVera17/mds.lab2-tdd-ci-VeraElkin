@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StringCalculatorTest {
     
     @Test
-    public void pruebaEjemplo() {
-        // Esta es una prueba de ejemplo para verificar que JUnit funciona
-        assertEquals(2, 1 + 1);
+    public void testCadenaVacia() {
+        StringCalculator calc = new StringCalculator();
+        assertEquals(0, calc.add(""));  // Cadena vacía debe devolver 0
     }
 }
 
