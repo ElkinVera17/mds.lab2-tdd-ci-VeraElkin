@@ -14,6 +14,7 @@ public class StringCalculator {
         if (numbers.isEmpty()) {
             return 0;
         }
-        return 0;  // Por ahora solo maneja cadena vacía
+        // Iteración 2: un solo número
+        return Integer.parseInt(numbers);
     }
 }

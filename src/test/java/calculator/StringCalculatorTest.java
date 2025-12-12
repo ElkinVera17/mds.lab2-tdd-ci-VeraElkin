@@ -15,6 +15,12 @@ public class StringCalculatorTest {
         StringCalculator calc = new StringCalculator();
         assertEquals(0, calc.add(""));  // Cadena vacía debe devolver 0
     }
+    
+    @Test
+    public void testUnNumero() {
+        StringCalculator calc = new StringCalculator();
+        assertEquals(1, calc.add("1"));  // "1" debe devolver 1
+    }
 }
 
 
