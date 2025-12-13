@@ -27,6 +27,12 @@ public class StringCalculatorTest {
         StringCalculator calc = new StringCalculator();
         assertEquals(3, calc.add("1,2"));  // "1,2" debe devolver 3
     }
+    @Test
+    public void testVariosNumeros() {
+        StringCalculator calc = new StringCalculator();
+        assertEquals(6, calc.add("1,2,3"));  // "1,2,3" debe devolver 6
+        assertEquals(10, calc.add("1,2,3,4"));  // "1,2,3,4" debe devolver 10
+    }
 }
 
 
