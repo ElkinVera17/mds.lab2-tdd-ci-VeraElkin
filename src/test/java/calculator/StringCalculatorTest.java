@@ -33,6 +33,11 @@ public class StringCalculatorTest {
         assertEquals(6, calc.add("1,2,3"));  // "1,2,3" debe devolver 6
         assertEquals(10, calc.add("1,2,3,4"));  // "1,2,3,4" debe devolver 10
     }
+    @Test
+    public void testConSaltosDeLinea() {
+        StringCalculator calc = new StringCalculator();
+        assertEquals(6, calc.add("1\n2,3"));  // "1\n2,3" debe devolver 6
+    }
 }
 
 

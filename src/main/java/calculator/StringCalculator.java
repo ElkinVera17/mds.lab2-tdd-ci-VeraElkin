@@ -15,7 +15,8 @@ public class StringCalculator {
             return 0;
         }
         
-        // Iteración 2+3: separar por comas y sumar
+        numbers = numbers.replace("\n", ",");
+        
         String[] partes = numbers.split(",");
         int suma = 0;
         for (String parte : partes) {
