@@ -21,6 +21,12 @@ public class StringCalculatorTest {
         StringCalculator calc = new StringCalculator();
         assertEquals(1, calc.add("1"));  // "1" debe devolver 1
     }
+    
+    @Test
+    public void testDosNumeros() {
+        StringCalculator calc = new StringCalculator();
+        assertEquals(3, calc.add("1,2"));  // "1,2" debe devolver 3
+    }
 }
 
 

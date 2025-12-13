@@ -9,12 +9,18 @@ package calculator;
  * @author USUARIO
  */
 public class StringCalculator {
-    public int add(String numbers) {
+     public int add(String numbers) {
         // Iteración 1: cadena vacía devuelve 0
         if (numbers.isEmpty()) {
             return 0;
         }
-        // Iteración 2: un solo número
-        return Integer.parseInt(numbers);
+        
+        // Iteración 2+3: separar por comas y sumar
+        String[] partes = numbers.split(",");
+        int suma = 0;
+        for (String parte : partes) {
+            suma += Integer.parseInt(parte);
+        }
+        return suma;
     }
 }
