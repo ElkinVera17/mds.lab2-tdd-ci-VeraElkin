@@ -25,7 +25,7 @@ public class StringCalculatorTest {
     @Test
     public void testDosNumeros() {
         StringCalculator calc = new StringCalculator();
-        assertEquals(999, calc.add("1,2"));  // "1,2" debe devolver 3
+        assertEquals(3, calc.add("1,2"));  // "1,2" debe devolver 3
     }
     @Test
     public void testVariosNumeros() {
